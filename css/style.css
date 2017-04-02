@@ -1,0 +1,13 @@
+.jumbotron{
+	margin: auto;
+	margin-top: 200px; 
+	width: 700px;
+	background-color: white;
+	
+}
+
+#author{
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px; 
+}
