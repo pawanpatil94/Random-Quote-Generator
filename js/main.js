@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	var quote;
 	var author;	
-	alert("pawan");
 
 	function loadQuote(){
 		var color = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
@@ -23,8 +22,8 @@ $(document).ready(function(){
 				else
 					author = '--said by Anonymous';
 				
-				$('#author').fadeIn().text(author);	
-				$('#quote').fadeIn().text(" "+quote).css("font-size", "25px");
+				$('#author').text(author);	
+				$('#quote').text(" "+quote).css("font-size", "25px");
 			}
 		});
 	}
@@ -38,8 +37,8 @@ $(document).ready(function(){
 			var color = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
 			var temp = Math.floor(Math.random() * (5));
 			
-			$('body, #changeQuote').delay(2000).css('background-color', color[temp]);	
-			$("i, #quote, #author").fadeIn().css('color', color[temp]);			
+			$('body, #changeQuote').css('background-color', color[temp]);	
+			$("i, #quote, #author").css('color', color[temp]);			
 		}
 		change();
 		
